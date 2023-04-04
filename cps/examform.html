@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Forms</title>
+
+   </head>
+
+   <style>
+         .btn{
+        background-color: blue;
+        color: white;
+      }
+   </style>
+
+   <body>
+      <h1> Midterm Feedback Form</h1>
+      <p>Please fill out this form to help 
+         us improve our Midterm Exam.</p>
+
+      <form method = "get" action = "examphp.php">
+
+         <input type = "hidden" name = "recipient" value = "watsanna">
+         <input type = "hidden" name = "subject"  value = "Feedback Form">
+         
+         <p><label>Name: 
+               <input name = "name" type = "text" size = "25">
+            </label></p>
+
+
+         <p><label>E-mail Address: 
+            <input name = "email" type = "email"  size = "25">
+         </label></p>              
+
+         <p>
+            <strong>Question Types you liked:</strong><br>
+
+            <label>Multiple Choice
+               <input name = "thingsliked[]" type = "checkbox"   value = "Design"></label>
+            <label>Multiple Answer
+               <input name = "thingsliked[]" type = "checkbox"   value = "Links"></label>
+            <label>Coding
+               <input name = "thingsliked[]" type = "checkbox"   value = "Ease"></label> 
+            <label>Extra Points
+               <input name = "thingsliked[]" type = "checkbox"   value = "Images"></label>
+            <label>Theoretical
+               <input name = "thingsliked[]" type = "checkbox"   value = "Code"></label>
+         </p>
+
+         <p>
+            <strong>What grade do you expect?:</strong><br>
+
+            <label>A
+               <input name = "howtosite" type = "radio"  value = "search engine" checked></label>
+            <label>A-
+               <input name = "howtosite" type = "radio"  value = "link"></label> 
+            <label>B+
+               <input name = "howtosite" type = "radio"  value = "deitel.com"></label>
+            <label>B
+               <input name = "howtosite" type = "radio"  value = "book"></label>
+            <label>B-
+               <input name = "howtosite" type = "radio"  value = "other"></label>
+               <label>None of the mentioned answers
+                                <input name = "howtosite" type = "radio"  value = "other"></label>
+            </p>
+
+         <p>
+            <label>Exam Date: 
+                <input type="date">
+                <label> (yyyy-mm-dd)</label>
+               
+            </label>
+         </p>
+
+         <p>
+            <input type = "submit" value = "Submit" class="btn" >
+            <input type = "reset" value = "Clear" class="btn">
+         </p>   
+      </form>
+   </body>
+</html>
+

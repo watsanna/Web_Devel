@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <title>Annaliese's Website | Contact </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <style>
+
+            body{
+                background: linear-gradient(to top left,blue, purple);
+                
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .header{
+            padding: 10px;
+            text-align: center;
+            background-color:  rgb(107, 6, 107);
+            color: white;
+            font-style: italic;
+        }
+
+
+            .navbar{
+                float: center;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                background-color: blueviolet;
+            }
+
+        
+            .navbar a.right {
+                float: right;
+            }
+
+          
+            .navbar a:hover {
+                background-color: gold;
+                color: white;
+            }
+
+            .txt{
+                text-align: center;
+                color: white;
+               
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 350px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                padding: 20px;
+                border-radius: 20px;
+                box-shadow: 0 0 40px #ccc;
+                align-items: center;
+                
+                
+            }
+
+        input[type=submit] {
+			background-color: rgb(192, 79, 192);
+		
+		}
+
+		input[type=submit]:hover {
+			background-color: violet;
+		}
+
+       
+       .img{
+        margin-left: auto;
+       }
+
+       @media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+    
+  }
+}
+            
+            @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+            }
+
+            .navbar a{
+                color: white;
+            }
+            .fa{
+                color: whitesmoke;
+                font-size: medium;
+
+            }
+
+            .required::after{
+  content: "*";
+  color: rgb(222, 56, 56);
+  font-size:20px;
+  
+}
+
+                    
+                     .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        align-content: bottom;
+        background-color: purple;
+        }
+
+        .footer-header{
+            
+            color: white;
+            font-style: italic;
+
+        }
+    
+    </style>
+      
+
+    </head>
+
+    <body>
+        <div class="header">
+            <p>WELCOME TO</p>
+            <h1>Annaliese Watson's Website </h1>
+        </div>
+    
+          <div class="navbar">
+            <a href="myWebsite.html"> Home Page</a>
+            <a href="myProfile.html">About Me</a>
+            <a href="contactMe.html">Contact Me</a>
+            <a href="myWork.html">My Work </a>
+            <a href="myStore.html" class="right">My Store</a>
+          </div>
+
+          <div class="txt">
+          <h1>Let's stay in contact </h1>
+          <h2>fill out the below form</h2>
+        </div>
+
+     
+
+        
+            
+           <div class="container" >
+            <form action="email.php" method="post">
+                <div class="txt">
+                <label class="required">Name</label><br>
+                <input  type="text" id="name" name="name" required>
+                <br>
+                <label class="required">Email </label><br>
+                <input  type="text" id="email" name="email" required>
+                <br>
+                <label>Purpose of Contact</label><br>
+                <input  type="box" id="message" name="message">
+            
+            
+                <br>
+                <input type="submit" value="submit" target="_blank" >
+    
+            </form>
+        </div>
+
+        </div>
+    
+     
+
+
+<div class="footer" >
+
+    <h1 class="footer-header">Annaliese Watson</h1>
+
+    
+    <a href="https://www.linkedin.com/in/annaliese-watson-636018253/" class="fa fa-linkedin" target="_blank"></a> 
+    <a href="https://www.instagram.com/lijahara/" class="fa fa-instagram " target="_blank"></a><br> <p></p>
+    <a href="contactMe.html" class="fa fa-globe">Email Me</a><br>
+    <h3 class="fa fa-envelope">watsanna@kean.edu</h3> <br>
+  
+    <p class="fa fa-phone">973-905-0697</p> <br>
+
+</div>
+
+    </body>
+</html>

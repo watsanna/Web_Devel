@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <title>Annaliese's Website | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+<style>
+    
+        body{
+                background: linear-gradient(to top left,blue, purple);
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        
+        .header{
+            padding: 80px;
+            text-align: center;
+            background-color:  rgb(107, 6, 107);
+            color: white;
+            font-style: italic;
+        }
+
+        .navbar{
+            float: center;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            background-color: blueviolet;
+        }
+
+                
+        .navbar a.right {
+        float: right;
+        }
+
+        .navbar a{
+                color: white;
+            }
+
+        
+        .navbar a:hover {
+        background-color: gold;
+        color: white;
+        }
+
+
+
+        @media screen and (max-width: 400px) {
+        .navbar a {
+            float: none;
+            width: 100%;
+        }
+
+    }
+
+   
+
+    .intro{
+        color: peru;
+        text-align: center;
+        font-family: fantasy ;
+
+    }
+
+    .intro2{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .slideshow-container {
+            max-width: 500px;
+            position: relative;
+            margin: auto;
+            }
+
+           
+            .text {
+            font-weight: 500;
+            color: yellow;
+            font-size: 50px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 8px;
+            width: 100%;
+            text-align: center;
+            font-family: fantasy ;
+            
+            }
+
+
+
+
+            
+            .fade {
+            animation-name: fade;
+            animation-duration: 1s;
+            }
+
+            @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+
+    
+            @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+            }
+
+            img{
+                border: 50px solid blueviolet;
+            }
+
+            .fa{
+                color: whitesmoke;
+                font-size: medium;
+
+            }
+
+
+            ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li::before {
+  content: "\2605";
+  color:peru;
+  margin-right: 10px;
+}
+
+
+
+                    
+                     .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        align-content: bottom;
+        background-color: purple;
+       
+        
+        }
+
+        .footer-header{
+            
+            color: white;
+            font-style: italic;
+
+        }
+
+
+
+
+</style>
+
+<body>
+
+</head>
+<body>
+
+    <div class="header">
+        <p>WELCOME TO</p>
+        <h1>Annaliese Watson's Website </h1>
+    </div>
+
+      <div class="navbar">
+        <a href="myWebsite.html"> Home Page</a>
+        <a href="myProfile.html">About Me</a>
+        <a href="contactMe.html">Contact Me</a>
+        <a href="myWork.html">My Work </a>
+        <a href="myStore.html" class="right">My Store</a>
+      </div>
+
+      
+        <div class="intro">
+            <h1> Hey there! I'm Annaliese. </h1>
+            <h2>Thank you for visiting my website, Enjoy!</h2>
+        </div>
+
+        <div class="intro2">
+            <br>
+            <h3> Here's a little snapshot of me: </h3>
+               <ul>
+                
+                <li>I am an aspiring UX/UI/web developer and designer</li>
+                <li>A Computational Science and Enginering STEM Major </li>
+                <li>Very energetic peformance artist dancing from 2 years old</li>
+                <li>My favorite color and print combination is red and animal print</li>
+                <li>I love site seeing, and exploring new fun places around the world</li>
+                <li>My hobbies are swimming & planning events (decoarting & designing flyers)</li>
+                <li> Favorite Dance Quote: "To watch us dance is to hear our hearts speak" ~ Hopi Indian</li>
+                <li>I believe it is not how one starts but instead how strong they end and the experience gained in the process</li>
+
+               </ul>  
+            
+
+        </div>
+             
+           
+        
+            
+      
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="stem.png" style="width:100%">
+          <div class="text"> Woman in STEM</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="dance.png" style="width:100%">
+          <div class="text">Performance Artist </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="NY.png" style="width:100%">
+          <div class="text">Explorer </div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+
+        
+
+
+
+ 
+
+   <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+<div class="footer" >
+
+    <h1 class="footer-header">Annaliese Watson</h1>
+
+    
+    <a href="https://www.linkedin.com/in/annaliese-watson-636018253/" class="fa fa-linkedin" target="_blank"></a> 
+    <a href="https://www.instagram.com/lijahara/" class="fa fa-instagram " target="_blank"></a><br><p></p>
+    <a href="contactMe.html" class="fa fa-globe">Email Me</a><br>
+    <h3 class="fa fa-envelope">watsanna@kean.edu</h3> <br>
+  
+    <p class="fa fa-phone">973-905-0697</p> <br>
+
+</div>
+
+
+
+</body>
+</html>
